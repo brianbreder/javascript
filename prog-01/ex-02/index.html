@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body{
+            background-color: rgba(12, 230, 103, 0.822);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+       var nome = window.prompt('Qual seu nome?') //vai aparecer uma pergunta 
+       window.alert('prazer em te conhecer, ' + nome +'!') //concatenação
+      var idade = window.prompt('Qual sua idade?')
+      var sexo = window.prompt('Qual seu sexo?')
+      alert('Prazer em te conhecer, ' + nome +"     idade: " + idade +'     sexo: ' + sexo)
+      var n1 = Number.parseInt(window.prompt('diga quanto recebeu esse mês'))
+      var n2 = Number.parseInt(window.prompt('diga quanto gastou esse mês'))
+      var s = n1 - n2
+      alert('Olá, ' + nome +', seu gasto mensal foi de: ' + n2 +', como recebeu: ' + n1 +', seu saldo é de: ' + s)
+
+</script>
+
+</body>
+</html>
