@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologia online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        var nome = window.prompt('Qual o seu nome?') //pergunta do nome
+        window.document.write(`Seja bem vindo, <strong>${nome}</strong> ! </br>`)
+        window.document.write(`Seu nome: ${nome.toUpperCase()} tem ${nome.length} letras </br>`)
+        var idade = Number(prompt('qual sua idade?')) //pergunta da idade
+        window.confirm(`Sua idade é de: ${idade} anos correto?`) //confirmação idade
+        var profissão = prompt('Qual sua profissão?') // pergunta da profissão
+        var país = prompt('Qual seu país de residência?') //país da pessoa
+        window.document.write(`Prazer ${nome} você tem ${idade} anos, e trabalha como ${profissão} em ${país} onde reside.</br>`)
+        var sal = Number(window.prompt('Qual o seu salário atual?')) //salario atual
+        var saldes = Number(window.prompt('Qual seu salário desejado?')) //salario desejado
+        var s = saldes - sal  
+        String(s)
+        document.write(`${nome.toLowerCase()}, para alcançar o salário desejado você precisa de aumentar em ${s.toLocaleString('pt-BR ', {style: 'currency', currency: 'BRL'})} seu salário!!!`)
+
+    </script>
+
+</body>
+</html>
