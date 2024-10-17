@@ -7,6 +7,7 @@
     <style>
         body{
             background-color: aquamarine;
+            font-size: large;
         }
         div#area{
             background-color: blueviolet;
@@ -54,10 +55,10 @@
     </script>
     <h1>Somando valores</h1>
     <input type="number" name="num1" id="num1">
-    +
+    <strong>+</strong>
     <input type="number" name="num2" id="num2">
     <input type="button" value="somar" onclick="somar()">
-    <div id="res">Sua some é de </div>
+    <div id="res">Sua soma é de </div>
     <script>
         function somar(){
             var res = document.getElementById('res')
@@ -69,6 +70,26 @@
             
             res.innerText = `Sua soma é de ${s}!!!`
         }
+    </script>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="tvel" id="tvel"> km/h. <br>
+    Qual o Limite de Velocidade da via: <input type="number" name="tlimit" id="tlimit"> <br>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="valor">Sua velocidade era de _ e estava _ do permitido </div>
+    <script>
+        function verificar(){
+        var tvel = document.getElementById('tvel')
+        var tlimit = document.getElementById('tlimit')
+        var valor = document.getElementById('valor')
+        var vel = Number(tvel.value)
+        var limit = Number(tlimit.value)   
+        
+        if (vel > limit){
+            valor.innerHTML = `Sua velocidade era de ${vel} e estava ${'acima do limite'} do permitido, ${'você foi <strong>multado</strong>'}`
+        }else{
+            valor.innerHTML = `Sua velocidade era de ${vel} e estava ${'abaixo do limite'} do permitido, ${'você não foi <strong>multado</strong>'}`
+        }
+         }   
     </script>
 </body>
 </html>
